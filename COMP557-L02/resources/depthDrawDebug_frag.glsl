@@ -1,5 +1,5 @@
 #version 410 core
-uniform sampler2D depthMap; 
+uniform sampler2D depthMap;
 
 in vec2 texCoordForFP;
 

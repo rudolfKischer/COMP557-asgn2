@@ -1,3 +1,6 @@
+//Rudolf C. Kischer
+//260956107
+
 #define _USE_MATH_DEFINES
 #include <cmath>
 #include <math.h>
@@ -310,7 +313,7 @@ int main(int argc, char **argv)
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
     
 	// Create a windowed mode window and its OpenGL context.
-	window = glfwCreateWindow(640, 480, "YOUR NAME", NULL, NULL);
+	window = glfwCreateWindow(640, 480, "Rudolf C. Kischer", NULL, NULL);
 	if(!window) {
 		glfwTerminate();
 		return -1;

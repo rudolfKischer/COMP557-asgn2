@@ -1,3 +1,5 @@
+//Rudolf C. Kischer
+//260956107
 #version 410 core
 uniform mat4 P;
 uniform mat4 V;
@@ -14,7 +16,10 @@ out vec4 positionLightCVV;
 
 void main() {
     vec4 Mpos = M * aPos;
-    positionLightCVV = vec4(0); //TODO: compute positionLightCVV 
+    
+    positionLightCVV = vec4(LightPV * M * aPos); //TODO: compute positionLightCVV
+    
+    
 
     vec4 normalDirection = MinvT * vec4(  aNor, 0 );
     normalForFP = (V * vec4(normalize( normalDirection.xyz ),0)).xyz;
